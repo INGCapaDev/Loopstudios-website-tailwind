@@ -38,3 +38,49 @@
     background-position: center;
   }
 }
+
+/* Hamburguer Menu */
+.hamburguer {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburguer-top,
+.hamburguer-middle,
+.hamburguer-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburguer-middle {
+  transform: translateY(7px);
+}
+
+.hamburguer-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburguer-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburguer-middle {
+  display: none;
+}
+
+.open .hamburguer-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
