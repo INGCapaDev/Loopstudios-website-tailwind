@@ -20,9 +20,8 @@ npm run watch
 
 ### Link
 
-[Go to website]()
+[Go to website](https://loopstudios-tail.vercel.app/)
 
 ### Image
 
 ![Alt text](images/loopstudios.png)
-# Loopstudios-website-tailwind
